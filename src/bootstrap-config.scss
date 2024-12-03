@@ -1,0 +1,62 @@
+// COLORS
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+$body-bg: #fff;                 // Background color for the body
+$body-color: #212529;           // Text color for the body
+$link-color: $primary;          // Link color
+$link-hover-color: darken($primary, 10%); // Hover color for links
+
+// ## FONTS
+
+$font-family-sans-serif: "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-size-base: 1rem;          // Base font size
+$font-size-lg: 1.25rem;         // Large text size
+$font-size-sm: 0.875rem;        // Small text size
+$font-weight-normal: 400;       // Normal font weight
+$font-weight-bold: 700;         // Bold font weight
+$line-height-base: 1.5;         // Line height
+$headings-color: inherit;       // Heading text color
+$headings-margin-bottom: 0.5rem;
+
+// #3 SPACING
+$spacer: 1rem;                  // Base spacing unit
+$spacers: (                     // Custom spacing scale
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+);
+
+// #4 GRID System
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';

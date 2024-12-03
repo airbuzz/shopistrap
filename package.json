@@ -1,0 +1,32 @@
+{
+  "name": "shopify-bootstrap-theme",
+  "version": "1.0.0",
+  "description": "A Shopify theme built with Bootstrap and modular JavaScript using a modern development workflow.",
+  "main": "index.js",
+  "scripts": {
+     "build:css": "sass src/main.scss assets/style.css --no-source-map --style=compressed",
+    "watch:css": "sass --watch src/main.scss:assets/style.css --style=compressed",
+    "build:js": "esbuild src/main.js --bundle --minify --outdir=assets",
+    "watch:js": "esbuild src/main.js --bundle --watch --outdir=assets",
+    "build": "npm run build:css && npm run build:js",
+    "watch": "npm-run-all --parallel watch:css watch:js dev",
+    "dev": "shopify theme dev",
+    "push": "shopify theme push"
+  },
+  "keywords": [
+    "shopify",
+    "bootstrap",
+    "sass",
+    "theme"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.68.0"
+  }
+}
