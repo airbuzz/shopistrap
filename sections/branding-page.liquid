@@ -1,0 +1,53 @@
+<section class="branding-page py-5">
+  <div class="container">
+    <!-- Introduction -->
+    <div class="text-center mb-5">
+      <h1 class="display-4">{{ 'Branding Guidelines' | t }}</h1>
+      <p class="lead">Our branding guidelines ensure consistency and reflect our identity.</p>
+    </div>
+
+    <!-- Colors Section -->
+    <div class="mb-5" id="colors">
+      <h2 class="h3">Colors</h2>
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        {% for color in section.settings.colors %}
+          <div class="col text-center">
+            <div class="rounded-circle mx-auto mb-2" style="width: 75px; height: 75px; background-color: {{ color.color_code }};"></div>
+            <p class="mb-0 fw-bold">{{ color.color_name }}</p>
+            <small class="text-muted">{{ color.color_code }}</small>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Typography Section -->
+    <div class="mb-5" id="typography">
+      <h2 class="h3">Typography</h2>
+      <div class="row g-4">
+        {% for font in section.settings.typography %}
+          <div class="col-12 col-md-6">
+            <div class="p-3 border rounded">
+              <p class="fw-bold mb-2">{{ font.font_name }}</p>
+              <p style="font-family: '{{ font.font_family }}'; font-size: {{ font.font_size }}px;">
+                {{ font.sample_text }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Icons Section -->
+    <div class="mb-5" id="icons">
+      <h2 class="h3">Icons</h2>
+      <div class="row g-4">
+        {% for icon in section.settings.icons %}
+          <div class="col-6 col-md-3 text-center">
+            <img src="{{ icon.icon_url }}" alt="{{ icon.icon_name }}" class="img-fluid mb-2">
+            <p>{{ icon.icon_name }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

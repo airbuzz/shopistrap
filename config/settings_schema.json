@@ -1,0 +1,60 @@
+{
+  "name": "Branding Page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "branding_intro",
+      "label": "Introduction Text",
+      "default": "Our branding guidelines ensure consistency and reflect our identity."
+    },
+    {
+      "type": "color_palette",
+      "id": "colors",
+      "label": "Colors",
+      "default": [
+        {
+          "color_name": "Primary",
+          "color_code": "#123456"
+        },
+        {
+          "color_name": "Secondary",
+          "color_code": "#654321"
+        }
+      ]
+    },
+    {
+      "type": "font_picker",
+      "id": "typography",
+      "label": "Typography",
+      "default": [
+        {
+          "font_name": "Header Font",
+          "font_family": "Roboto",
+          "font_size": "24",
+          "sample_text": "The quick brown fox jumps over the lazy dog."
+        },
+        {
+          "font_name": "Body Font",
+          "font_family": "Arial",
+          "font_size": "16",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "icons",
+      "label": "Icons",
+      "default": [
+        {
+          "icon_name": "Home Icon",
+          "icon_url": "/assets/home-icon.svg"
+        },
+        {
+          "icon_name": "Search Icon",
+          "icon_url": "/assets/search-icon.svg"
+        }
+      ]
+    }
+  ]
+}
